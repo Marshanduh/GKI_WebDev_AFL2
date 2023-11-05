@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('persembahans', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nama_persembahan');
+            $table->string('kode_persembahan');
+            $table->string('contoh_penulisan_persembahan');
         });
     }
 
