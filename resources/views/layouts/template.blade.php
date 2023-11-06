@@ -8,9 +8,12 @@
   </head>
   <body>
 
-  <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-lg" style="background-color: #9E7BB5;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">
+      <img src="{{asset('image/unnamed.jpg')}}" alt="" width="30" height="24" class="d-inline-block align-text-top text-white">
+      GKI Mojokerto
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -20,10 +23,10 @@
           <a class="nav-link active" aria-current="page" href="/">Homepage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/tentangkita">Kebaktian</a>
+          <a class="nav-link active" href="/kebaktian">Kebaktian</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="/kontakkita">Persembahan</a>
+          <a class="nav-link active" href="/persembahan">Persembahan</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link active" href="/project">My Project</a>

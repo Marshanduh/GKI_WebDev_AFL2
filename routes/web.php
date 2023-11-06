@@ -13,6 +13,33 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('homepage',
+        [
+            "pagetitle" => "GKI Mojokerto",
+            "maintitle" => "Welcome to GKI Mojokerto"
+        ]
+    );
+});
+
+Route::get('/kebaktian', function () {
+    return view('kebaktian',
+        [
+            "pagetitle" => "Kebaktian",
+            "maintitle" => "Daftar Kebaktian GKI Mojokerto"
+        ]
+    );
+});
+
+Route::get('/persembahan', function () {
+    return view('persembahan',
+        [
+            "pagetitle" => "Persembahan",
+            "maintitle" => "Daftar Persembahan GKI Mojokerto"
+        ]
+    );
 });
