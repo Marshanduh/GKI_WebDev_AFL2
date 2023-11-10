@@ -15,7 +15,7 @@
     <style>
     .navbar-brand{
     font-family: Inter;
-    font-size: 30px;
+    font-size: 20px;
     }
 
     .nav-link{
@@ -32,7 +32,7 @@
       }
     }
 
-    .nav-link:hover{
+    .nav-link:hover::after{
       color: blue;
     }
 
@@ -40,14 +40,14 @@
 
     <!-- AKHIR CSS -->
 
-    <title>Welcome to GKI Mojokerto</title>
+    <title>{{$pagetitle}}</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
   <div class="container">
     <!-- <a class="navbar-brand" href="#">GKI Mojokerto</a> -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="{{asset('image/unnamed.jpg')}}" alt="" width="30" height="24" class="d-inline-block align-text-top">
       GKI Mojokerto
     </a>
@@ -57,13 +57,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Kebaktian</a>
+          <a class="nav-link" href="/kebaktian">Kebaktian</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Persembahan</a>
+          <a class="nav-link" href="/persembahan">Persembahan</a>
         </li>
         <!-- <li class="nav-item">
           <a class="nav-link disabled">Persembahan</a>
@@ -74,6 +74,14 @@
 </nav>
     <!-- Akhir Navbar -->
 
+    <!-- Bagian isi dari tiap page -->
+    <div class="w-100">
+        <h1>{{$maintitle}}</h1>
+        <h2>@yield('layout_tagline')</h2>
+        @yield('layout_content')
+    </div>
+    <!-- Akhir isi dari tiap page -->
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -81,9 +89,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+   
   </body>
 </html>

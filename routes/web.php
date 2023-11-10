@@ -21,7 +21,7 @@ Route::get('/', function () {
     return view('homepage',
         [
             "pagetitle" => "GKI Mojokerto",
-            "maintitle" => "Welcome to GKI Mojokerto"
+            "maintitle" => ""
         ]
     );
 });
