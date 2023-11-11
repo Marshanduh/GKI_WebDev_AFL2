@@ -38,11 +38,11 @@
                     <!-- list -->
                 <h3 class="fw-bold mb-3">GKI Mojokerto</h3>
                 <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
-                  <li><a href="/about_us" class="nav-link">About</a></li>
-                  <li><a href="#" class="nav-link">Kebaktian</a></li>
-                  <li><a href="#" class="nav-link">Persembahan</a></li>
-                  <li><a href="#" class="nav-link">Careers</a></li>
-                  <li><a href="/contact_us" class="nav-link">Contact</a></li>
+                  <li><a href="/about_us" class="nav-footers">About</a></li>
+                  <li><a href="#" class="nav-footers">Kebaktian</a></li>
+                  <li><a href="#" class="nav-footers">Persembahan</a></li>
+                  <li><a href="#" class="nav-footers">Careers</a></li>
+                  <li><a href="/contact_us" class="nav-footers">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -51,11 +51,11 @@
                     <!-- list -->
                 <h3 class="fw-bold mb-3">Support</h3>
                 <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
-                  <li><a href="#" class="nav-link">Help and Support</a></li>
-                  <li><a href="#" class="nav-link">Become Instructor</a></li>
-                  <li><a href="#" class="nav-link">Get the app</a></li>
-                  <li><a href="#" class="nav-link">FAQ’s</a></li>
-                  <li><a href="#" class="nav-link">Tutorial</a></li>
+                  <li><a href="#" class="nav-footers">Help and Support</a></li>
+                  <li><a href="#" class="nav-footers">Become Instructor</a></li>
+                  <li><a href="#" class="nav-footers">Get the app</a></li>
+                  <li><a href="#" class="nav-footers">FAQ’s</a></li>
+                  <li><a href="#" class="nav-footers">Tutorial</a></li>
                 </ul>
     
               </div>
@@ -82,10 +82,10 @@
               <!-- Links -->
             <div class="col-12 col-md-7 col-lg-8 d-md-flex justify-content-end">
                 <nav class="nav nav-footer">
-                    <a class="nav-link ps-0" href="#">Privacy Policy</a>
-                    <a class="nav-link px-2 px-md-3" href="#">Cookie Notice  </a>
+                    <a class="nav-footers ps-0" href="#">Privacy Policy</a>
+                    <a class="nav-footers px-2 px-md-3" href="#">Cookie Notice  </a>
     
-                    <a class="nav-link" href="#">Terms of Use</a>
+                    <a class="nav-footers" href="#">Terms of Use</a>
                 </nav>
             </div>
         </div>

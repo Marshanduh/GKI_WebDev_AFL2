@@ -14,7 +14,9 @@ class KebaktianController extends Controller
      */
     public function index()
     {
-        //
+        $data_kebaktian = Kebaktian::all(); 
+        return $data_kebaktian; 
+        // return view ('kebaktian', compact('data_kebaktian'));
     }
 
     /**
