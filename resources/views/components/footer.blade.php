@@ -7,7 +7,7 @@
               <div class="mb-4">
                 <img src="../assets/images/brand/logo/logo.svg" alt="" class="logo-inverse ">
                 <div class="mt-4">
-                  <p>Geek is feature-rich components and beautifully Bootstrap UIKit for developers, built with bootstrap responsive framework.</p>
+                  <p>GKI Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos veniam ut culpa error minus blanditiis quo qui sapiente, delectus praesentium, alias sint neque modi cupiditate nostrum libero necessitatibus iste debitis..</p>
                      <!-- social media -->
                   <div class="fs-4 mt-4">
                     <!--Facebook-->
@@ -36,13 +36,13 @@
             <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
               <div class="mb-4">
                     <!-- list -->
-                <h3 class="fw-bold mb-3">Company</h3>
+                <h3 class="fw-bold mb-3">GKI Mojokerto</h3>
                 <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
-                  <li><a href="#" class="nav-link">About</a></li>
-                  <li><a href="#" class="nav-link">Pricing</a></li>
-                  <li><a href="#" class="nav-link">Blog</a></li>
+                  <li><a href="/about_us" class="nav-link">About</a></li>
+                  <li><a href="#" class="nav-link">Kebaktian</a></li>
+                  <li><a href="#" class="nav-link">Persembahan</a></li>
                   <li><a href="#" class="nav-link">Careers</a></li>
-                  <li><a href="#" class="nav-link">Contact</a></li>
+                  <li><a href="/contact_us" class="nav-link">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -76,7 +76,7 @@
             <div class="col-lg-4 col-md-5 col-12">
                 <span>© <span id="copyright2">
                   <script>document.getElementById('copyright2').appendChild(document.createTextNode(new Date().getFullYear()))</script>
-              </span> Geeks-UI, Inc. All Rights Reserved</span>
+              </span> Marshanda 0706012210056 & Sophia Madlentsy Tambunan 0706012210058</span>
                 </div>
     
               <!-- Links -->
