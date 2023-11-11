@@ -43,3 +43,21 @@ Route::get('/persembahan', function () {
         ]
     );
 });
+
+Route::get('/contact_us', function () {
+    return view('contact_us',
+        [
+            "pagetitle" => "GKI Mojokerto - Contact Us",
+            "maintitle" => "Contact Us"
+        ]
+    );
+});
+
+Route::get('/about_us', function () {
+    return view('about_us',
+        [
+            "pagetitle" => "GKI Mojokerto - About Us",
+            "maintitle" => "About Us"
+        ]
+    );
+});
