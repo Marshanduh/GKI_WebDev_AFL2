@@ -100,9 +100,9 @@
     <div class="mt-5">
         <!-- Content here -->
 
-        
 
-        
+
+
         @yield('layout_content')
 
     </div>
