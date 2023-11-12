@@ -16,8 +16,14 @@ class KebaktianController extends Controller
      */
     public function index()
     {
-        $data_kebaktian = Kebaktian::all(); 
-        return view('kebaktian', compact('data_kebaktian'));
+        return view('kebaktian', ['kebaktians' => Kebaktian::get()])->with([
+            "pagetitle" => "Kebaktian"
+            //"maintitle" => "Daftar Kebaktian GKI Mojokerto",
+            // Add more data as needed
+        ]);
+
+        // $data_kebaktian = Kebaktian::all(); 
+        // return view('kebaktian', compact('data_kebaktian'));
     }
 
     /**
