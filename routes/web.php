@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\KebaktianController;
 use App\Models\Kebaktian;
+use App\Models\Persembahan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,15 +19,14 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [KebaktianController::class, 'index']); 
-// {
-//     return view('homepage',
-//         [
-//             "pagetitle" => "GKI Mojokerto",
-//             "maintitle" => ""
-//         ]
-//     );
-// });
+Route::get('/', function () {
+    return view('homepage',
+        [
+            "pagetitle" => "GKI Mojokerto",
+            "maintitle" => ""
+        ]
+    );
+});
 
 Route::get('/kebaktian', function () {
     return view('kebaktian',
@@ -43,7 +42,8 @@ Route::get('/persembahan', function () {
     return view('persembahan',
         [
             "pagetitle" => "Persembahan",
-            "maintitle" => "Daftar Persembahan GKI Mojokerto"
+            "maintitle" => "Daftar Persembahan GKI Mojokerto", 
+            "persembahans" => Persembahan::index()
         ]
     );
 });

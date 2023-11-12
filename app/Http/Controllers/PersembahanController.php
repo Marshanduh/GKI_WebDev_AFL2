@@ -15,6 +15,9 @@ class PersembahanController extends Controller
     public function index()
     {
         //
+        return view('index', [
+            'persembahans' => Persembahan::all()
+        ]);
     }
 
     /**

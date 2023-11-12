@@ -35,16 +35,6 @@
                 margin-right: 30px;
             }
 
-            .nav-link:hover::after {
-                content: '';
-                display: block;
-                border-bottom: 3px solid #0B63DC;
-                width: 50%;
-                margin: auto;
-                padding-bottom: 3px;
-                margin-bottom:-6px;
-            }
-
             .nav-item.active .nav-link {
             
             background-color: #334eac; /* Add your preferred background color */
