@@ -5,6 +5,7 @@ use App\Http\Controllers\PersembahanController;
 use App\Models\Kebaktian;
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
     return view('homepage',
         [
@@ -23,7 +24,7 @@ Route::get('/contact_us', function () {
     return view('contact_us',
         [
             "pagetitle" => "GKI Mojokerto - Contact Us",
-            "maintitle" => "Contact Us"
+            //"maintitle" => "Contact Us"
         ]
     );
 });
@@ -32,7 +33,7 @@ Route::get('/about_us', function () {
     return view('about_us',
         [
             "pagetitle" => "GKI Mojokerto - About Us",
-            "maintitle" => "About Us"
+            //"maintitle" => "About Us"
         ]
     );
 });

@@ -29,20 +29,28 @@
 
         /* HANYA UNTUK DEKSTOP */
         @media (min-width: 992px) {
+            .navbar {
+                border-bottom: 2px solid #ddd;
+                /* Adjust the color and thickness as needed */
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+
             .nav-link {
                 font-family: Inter;
                 text-transform: uppercase;
                 margin-right: 30px;
             }
 
-            .nav-item.active .nav-link {
-            
-            background-color: #334eac; /* Add your preferred background color */
-            color: white  !important; /* Set text color for better visibility */
-            border-radius: 15px; /* Optional: Add border-radius for a rounded look */
-        }
-
-
+            .nav-link:hover::after {
+                content: '';
+                display: block;
+                border-bottom: 3px solid #0B63DC;
+                width: 50%;
+                margin: auto;
+                padding-bottom: 3px;
+                margin-bottom: -6px;
+            }
         }
     </style>
 
@@ -53,7 +61,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top mb-5">
         <div class="container">
             <!-- <a class="navbar-brand" href="#">GKI Mojokerto</a> -->
             <a class="navbar-brand" href="/">
@@ -89,15 +97,15 @@
     <!-- Akhir Navbar -->
 
     <!-- Bagian isi dari tiap page -->
-    <div>
-      <!-- Content here -->
-      
-      <h1>{{$maintitle}}</h1>
- 
-      <h2>@yield('layout_tagline')</h2>
-      @yield('layout_content')
-         
-     </div>
+    <div class="mt-5">
+        <!-- Content here -->
+
+        
+
+        
+        @yield('layout_content')
+
+    </div>
     <!-- Akhir isi dari tiap page -->
 
     <x-footer />

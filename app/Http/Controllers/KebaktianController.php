@@ -15,6 +15,7 @@ class KebaktianController extends Controller
     public function index()
     {
         return view('kebaktian', ['kebaktians' => Kebaktian::get()])->with([
+
             "pagetitle" => "Kebaktian", 
             "maintitle" => "Kebaktian GKI Mojokerto"
 

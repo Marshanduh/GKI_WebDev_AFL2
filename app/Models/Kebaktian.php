@@ -9,10 +9,12 @@ class Kebaktian extends Model
 {
     use HasFactory;
 
+
     protected $fillable = [
         'nama_ibadah',
         'hari_pelaksanaan',
         'waktu_ibadah', 
         'lokasi_kebaktian', 
         'foto_kebaktian'];
+
 }
