@@ -45,6 +45,13 @@
                 margin-bottom:-6px;
             }
 
+            .nav-item.active .nav-link {
+            
+            background-color: #334eac; /* Add your preferred background color */
+            color: white  !important; /* Set text color for better visibility */
+            border-radius: 15px; /* Optional: Add border-radius for a rounded look */
+        }
+
 
         }
     </style>
@@ -70,24 +77,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
+                        <a class="nav-link" href="/">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('kebaktian') ? 'active' : '' }}">
                         <a class="nav-link" href="/kebaktian">Kebaktian</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('persembahan') ? 'active' : '' }}">
                         <a class="nav-link" href="/persembahan">Persembahan</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('contact_us') ? 'active' : '' }}">
                         <a class="nav-link" href="/contact_us">Contact Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->is('about_us') ? 'active' : '' }}">
                         <a class="nav-link" href="/about_us">About Us</a>
                     </li>
-                    <!-- <li class="nav-item">
-          <a class="nav-link disabled">Persembahan</a>
-        </li> -->
                 </ul>
             </div>
         </div>
