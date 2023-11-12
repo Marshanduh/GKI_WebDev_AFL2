@@ -94,7 +94,7 @@
                                         
                                     <p>4. Membangun Komunitas: Kami menyadari pentingnya kebersamaan dalam perjalanan iman, dan kami berusaha untuk menciptakan komunitas yang mendukung, menguatkan, dan menginspirasi satu sama lain.</p>
                                 </div>
-                                <img class="img-fluid" src="{{ asset('image/kaksans2.png') }}" alt="..." />
+                                
                             </div>
                         </div>
                     </div>
@@ -112,12 +112,12 @@
         </div>
     </section>
 
-    <!-- Header-->
-    <header class="py-5">
+    <!--End Section-->
+    <section class="py-5">
         <div class="container px-5 pb-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-xxl-5">
-                    <!-- Header text content-->
+                    <!-- End-Section text content-->
                     <div class="text-xxl-start">
                         <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
                             <div class="text-uppercase">Design &middot; Development &middot; Marketing</div>
@@ -144,5 +144,5 @@
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 @endsection
