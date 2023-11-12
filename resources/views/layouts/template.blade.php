@@ -84,12 +84,13 @@
                     <li class="nav-item {{ request()->is('persembahan') ? 'active' : '' }}">
                         <a class="nav-link" href="/persembahan">Persembahan</a>
                     </li>
-                    <li class="nav-item {{ request()->is('contact_us') ? 'active' : '' }}">
-                        <a class="nav-link" href="/contact_us">Contact Us</a>
-                    </li>
                     <li class="nav-item {{ request()->is('about_us') ? 'active' : '' }}">
                         <a class="nav-link" href="/about_us">About Us</a>
                     </li>
+                    <li class="nav-item {{ request()->is('contact_us') ? 'active' : '' }}">
+                        <a class="nav-link" href="/contact_us">Contact Us</a>
+                    </li>
+                    
                 </ul>
             </div>
         </div>
