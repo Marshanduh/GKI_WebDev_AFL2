@@ -1,6 +1,15 @@
 @extends('layouts.template')
 
 @section('layout_content')
+
+<style>
+    @media (max-width: 767px) {
+        .display-4{
+            font-size: 30px;
+        }
+    }
+
+</style>
     {{-- HEADER --}}
 
     <main class="container">

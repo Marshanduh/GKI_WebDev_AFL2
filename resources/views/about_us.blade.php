@@ -19,6 +19,21 @@
                           height: auto; */
             }
         }
+
+        @media (max-width: 767px) {
+
+            .img-fluid{
+                height: auto;
+            }
+            .display-4{
+                font-size: 30px;
+            }
+            .display-3{
+                font-size: 40px;
+            }
+
+        }
+
     </style>
     <!-- AKHIR STYLE CSS -->
 
@@ -26,7 +41,7 @@
     <section class="py-5 bg-black text-white">
         <div class="container px-5">
             <div class="row gx-5 justify-content-center">
-                <div class="col-xxl-8">
+                <div class="col-md-8">
                     <div class="text-center my-5">
                         <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Tentang Kami</span></h2>
                         <p class="lead fw-light mb-4">GKI (Gereja Kristen Indonesia) Mojokerto</p>
@@ -52,7 +67,7 @@
                 <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Visi & Misi</span></h1>
             </div>
             <div class="row gx-5 justify-content-center">
-                <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <div class="col-lg-6">
                     <!-- Project Card 1-->
                     <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                         <div class="card-body p-0">
@@ -79,7 +94,7 @@
                                         
                                     <p>4. Membangun Komunitas: Kami menyadari pentingnya kebersamaan dalam perjalanan iman, dan kami berusaha untuk menciptakan komunitas yang mendukung, menguatkan, dan menginspirasi satu sama lain.</p>
                                 </div>
-                                <img class="img-fluid" src="{{ asset('image/bajempacet.jpg') }}" alt="..." />
+                                <img class="img-fluid" src="{{ asset('image/kaksans2.png') }}" alt="..." />
                             </div>
                         </div>
                     </div>
@@ -123,7 +138,7 @@
                         <div class="profile bg-gradient-primary-to-secondary">
                             <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
                             <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                            <img class="profile-img" src="{{ asset('image/Kebaktian 2.png') }}" alt="..." />
+                            <img class="img-fluid" src="{{ asset('image/Kebaktian 2.png') }}" alt="..." />
                         </div>
                     </div>
                 </div>
