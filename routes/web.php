@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\KebaktianController;
+use App\Models\Kebaktian;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,20 +19,22 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('homepage',
-        [
-            "pagetitle" => "GKI Mojokerto",
-            "maintitle" => ""
-        ]
-    );
-});
+Route::get('/', [KebaktianController::class, 'index']); 
+// {
+//     return view('homepage',
+//         [
+//             "pagetitle" => "GKI Mojokerto",
+//             "maintitle" => ""
+//         ]
+//     );
+// });
 
 Route::get('/kebaktian', function () {
     return view('kebaktian',
         [
             "pagetitle" => "Kebaktian",
-            "maintitle" => "Daftar Kebaktian GKI Mojokerto"
+            "maintitle" => "Daftar Kebaktian GKI Mojokerto",
+            
         ]
     );
 });

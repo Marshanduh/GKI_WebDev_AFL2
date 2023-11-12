@@ -6,6 +6,8 @@ use App\Models\Kebaktian;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreKebaktianRequest;
 use App\Http\Requests\UpdateKebaktianRequest;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class KebaktianController extends Controller
 {
@@ -15,8 +17,7 @@ class KebaktianController extends Controller
     public function index()
     {
         $data_kebaktian = Kebaktian::all(); 
-        return $data_kebaktian; 
-        // return view ('kebaktian', compact('data_kebaktian'));
+        return view('kebaktian', compact('data_kebaktian'));
     }
 
     /**
