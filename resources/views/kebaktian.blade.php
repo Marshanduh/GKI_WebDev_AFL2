@@ -9,15 +9,17 @@
 
         .custom-image {
             width: 100%;
-            height: 80%;
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover; /* This ensures the image maintains its aspect ratio */
         }
-        .custom-hr{
-                border-top: 1px solid #ccc;
-                margin-top: 5px; 
-                margin-bottom: 5px; 
-            }
 
-        @media (max-width: 767px){
+        .custom-hr {
+            border-top: 1px solid #ccc;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 767px) {
             .kebaktian {
                 padding: 10px;
                 margin-bottom: 5px;
@@ -26,11 +28,12 @@
             .jumbotron1 {
                 flex-direction: column;
             }
+
             .custom-image {
                 height: auto;
             }
 
-            .display-4{
+            .display-4 {
                 font-size: 20px;
                 font-weight: 500;
             }
@@ -40,62 +43,48 @@
                 margin-bottom: 2px;
             }
 
-            .my-4{
+            .my-4 {
                 margin-top: 5px;
             }
 
-            .capt{
+            .capt {
                 font-size: small;
                 margin-bottom: 2px;
             }
 
-            .btn-primary{
+            .btn-primary {
                 font-size: 10px;
                 padding: 5px 10px;
             }
 
-            .custom-hr{
+            .custom-hr {
                 border-top: 1px solid #ccc;
-                margin-top: 5px; 
+                margin-top: 5px;
             }
-            
         }
-
     </style>
 
     <div class="card">
         <div class="card-body">
-            @foreach ($kebaktians as $key => $kebaktian)
-                <!-- ROW KEBAKTIAN -->
-                <div class="row kebaktian">
-                    <!-- KEBAKTIAN DENGAN URUTAN GENAP -->
-                    @if ($key % 2 == 0)
-                        <div class="col">
+            <div class="row">
+                @foreach ($kebaktians as $key => $kebaktian)
+                    <div class="col-md-6 kebaktian">
+                        <div class="card shadow">
                             <img src="{{ asset('image/' . $kebaktian->foto_kebaktian) }}" alt="Kebaktian"
                                 class="img-fluid custom-image">
-                        </div>
-                    @endif
-                    <div class="col">
-                        <div class="row jumbotron1">
-                            <div class="col">
+                            <div class="card-body">
                                 <h1 class="display-4">{{ $kebaktian->nama_ibadah }}</h1>
-                                <p class="lead">{{ $kebaktian->hari_pelaksanaan }}, {{ $kebaktian->waktu_ibadah }}</p>
+                                <p class="lead">{{ $kebaktian->hari_pelaksanaan }},
+                                    {{ $kebaktian->waktu_ibadah }}</p>
                                 <div class="custom-hr"></div>
-                                <p class="capt">Lokasi kebaktian dilaksanakan di {{ $kebaktian->lokasi_kebaktian }}</p>
+                                <p class="capt">Lokasi kebaktian dilaksanakan di
+                                    {{ $kebaktian->lokasi_kebaktian }}</p>
                                 <a class="btn btn-primary btn-lg" href="#" role="button">Lokasi</a>
                             </div>
                         </div>
                     </div>
-                    <!-- KEBAKTIAN DENGAN URUTAN GANJIL -->
-                    @if ($key % 2 != 0)
-                        <div class="col order-md-2">
-                            <img src="{{ asset('image/' . $kebaktian->foto_kebaktian) }}" alt="Kebaktian"
-                                class="img-fluid custom-image">
-                        </div>
-                    @endif
-                </div>
-            @endforeach
-            <!-- AKHIR KEBAKTIAN JUMBOTRON  -->
+                @endforeach
+            </div>
         </div>
     </div>
 @endsection

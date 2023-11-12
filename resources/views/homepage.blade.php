@@ -47,14 +47,14 @@
       <img src="{{asset('image/Kebaktian 2.png')}}" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <p class="mt-3">--GKI MOJOKERTO--</p>
-        <h1>Some representative placeholder content for the second slide.</h1>
+        <h1>"Seorang sahabat menaruh kasih setiap waktu, dan menjadi seorang saudara dalam kesukaran."</h1>
       </div>
     </div>
     <div class="carousel-item c-item">
       <img src="{{asset('image/Natal 1.png')}}" class="d-block w-100 c-img" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <p class="mt-3">--GKI MOJOKERTO--</p>
-        <h1>Some representative placeholder content for the third slide.</h1>
+        <h1>"Biarkan semua yang kamu lakukan didasari dengan cinta."</h1>
       </div>
     </div>
   </div>

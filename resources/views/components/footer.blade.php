@@ -39,9 +39,8 @@
                 <h3 class="fw-bold mb-3">GKI Mojokerto</h3>
                 <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
                   <li><a href="/about_us" class="nav-footers">About</a></li>
-                  <li><a href="#" class="nav-footers">Kebaktian</a></li>
-                  <li><a href="#" class="nav-footers">Persembahan</a></li>
-                  <li><a href="#" class="nav-footers">Careers</a></li>
+                  <li><a href="/kebaktian" class="nav-footers">Kebaktian</a></li>
+                  <li><a href="/persembahan" class="nav-footers">Persembahan</a></li>
                   <li><a href="/contact_us" class="nav-footers">Contact</a></li>
                 </ul>
               </div>
@@ -54,7 +53,7 @@
                   <li><a href="#" class="nav-footers">Help and Support</a></li>
                   <li><a href="#" class="nav-footers">Become Instructor</a></li>
                   <li><a href="#" class="nav-footers">Get the app</a></li>
-                  <li><a href="#" class="nav-footers">FAQ’s</a></li>
+                  <li><a href="/contact_us" class="nav-footers">FAQ’s</a></li>
                   <li><a href="#" class="nav-footers">Tutorial</a></li>
                 </ul>
     

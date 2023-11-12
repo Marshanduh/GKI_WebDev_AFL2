@@ -79,7 +79,7 @@
                                         
                                     <p>4. Membangun Komunitas: Kami menyadari pentingnya kebersamaan dalam perjalanan iman, dan kami berusaha untuk menciptakan komunitas yang mendukung, menguatkan, dan menginspirasi satu sama lain.</p>
                                 </div>
-                                <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                <img class="img-fluid" src="{{ asset('image/bajempacet.jpg') }}" alt="..." />
                             </div>
                         </div>
                     </div>
