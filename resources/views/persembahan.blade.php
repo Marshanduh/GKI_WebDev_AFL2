@@ -1,24 +1,31 @@
 @extends('layouts.template')
 
 @section('layout_content')
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nama Persembahan</th>
-      <th scope="col">Kode Persembahan</th>
-      <th scope="col">Contoh Penulisan</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach($data_persembahan as $item)
-    <tr>
-      <td>1</th>
-      <td>{{$item['nama_persembahan']}}</td>
-      <td>{{$item['kode_persembahan']}}</td>
-      <td>{{$item['contoh_penulisan_persembahan']}}</td>
-    </tr>
-    @endforeach
-  </tbody>
-</table>
+
+<div class="card">
+    <div class="table-responsive">
+        <table class="table table-vcenter card-table">
+            <thead>
+                <tr>
+                    <th>Nama Persembahan</th>
+                    <th>Kode Persembahan</th>
+                    <th>Contoh Penulisan</th>
+                    
+                    <th class="w-1"></th>
+                </tr>
+            </thead>
+            <tbody>
+               {{-- // ['nama_persembahan','kode_persembahan','contoh_penulisan_persembahan']; --}}
+                @foreach($persembahans as $persembahan)
+                <tr>
+                    <td>{{$persembahan->nama_persembahan}}</td>
+                    <td>{{$persembahan->kode_persembahan}}</td>
+                    <td>{{$persembahan->contoh_penulisan_persembahan}}</td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+    </div>
+</div>
+
 @endsection

@@ -6,8 +6,6 @@ use App\Models\Kebaktian;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreKebaktianRequest;
 use App\Http\Requests\UpdateKebaktianRequest;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class KebaktianController extends Controller
 {
@@ -16,8 +14,11 @@ class KebaktianController extends Controller
      */
     public function index()
     {
-        $data_kebaktian = Kebaktian::all(); 
-        return view('kebaktian', compact('data_kebaktian'));
+        return view('kebaktian', ['kebaktians' => Kebaktian::get()])->with([
+            "pagetitle" => "Kebaktian", 
+            "maintitle" => "Kebaktian GKI Mojokerto"
+
+        ]);    
     }
 
     /**
@@ -33,8 +34,37 @@ class KebaktianController extends Controller
      */
     public function store(StoreKebaktianRequest $request)
     {
-        //
+        $request->validate([
+            'nama_ibadah' => 'required',
+            'hari_pelaksanaan' => 'required',
+            'waktu_ibadah' => 'nullable',
+            'lokasi_kebaktian' => 'required',
+            'foto_kebaktian' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+            // Buat objek Kebaktian baru
+            $kebaktian = new Kebaktian([
+                'nama_ibadah' => $request->input('nama_ibadah'),
+                'hari_pelaksanaan' => $request->input('hari_pelaksanaan'),
+                'waktu_ibadah' => $request->input('waktu_ibadah'),
+                'lokasi_kebaktian' => $request->input('lokasi_kebaktian'),
+            ]);
+
+            if ($request->hasFile('foto_kebaktian')) {
+                $file = $request->file('foto_kebaktian');
+                $path = $file->storeAs('public/kebaktian', $file->getClientOriginalName());
+
+                // Simpan nama file ke dalam database
+                $kebaktian->foto_kebaktian = $file->getClientOriginalName();
+            }
+
+            // Simpan objek Kebaktian ke dalam database
+            $kebaktian->save();
+
+            // Redirect atau berikan respons sesuai kebutuhan
+            return redirect()->route('kebaktian.index')->with('success', 'Data Kebaktian berhasil disimpan.');
     }
+    
 
     /**
      * Display the specified resource.

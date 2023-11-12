@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('hari_pelaksanaan');
             $table->string('waktu_ibadah')->nullable(true);
             $table->string('lokasi_kebaktian');
+            $table->string('foto_kebaktian', 300)->nullable(true);
         });
     }
 

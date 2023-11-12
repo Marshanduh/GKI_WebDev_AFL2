@@ -15,8 +15,11 @@ class PersembahanController extends Controller
     public function index()
     {
         //
-        return view('index', [
-            'persembahans' => Persembahan::all()
+        return view('persembahan', ['persembahans' => Persembahan::get()])->with([
+            "pagetitle" => "Persembahan", 
+            "maintitle" => "Macam Persembahan"
+            
+            // Add more data as needed
         ]);
     }
 

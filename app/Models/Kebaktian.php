@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Kebaktian extends Model
 {
-    protected $table = 'kebaktians'; 
+    use HasFactory;
+
+    protected $fillable = [
+        'nama_ibadah',
+        'hari_pelaksanaan',
+        'waktu_ibadah', 
+        'lokasi_kebaktian', 
+        'foto_kebaktian'];
 }
