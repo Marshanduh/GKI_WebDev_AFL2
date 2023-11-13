@@ -15,6 +15,8 @@
               width: 100%;
               height: 100%;
           }
+
+
       }
 
       @media (max-width: 767px) {
@@ -29,6 +31,21 @@
           .carousel-caption p {
               font-size: 14px;
           }
+
+              .display-4 {
+            font-size: 30px;
+          }
+
+          .card-title{
+            font-size: 13px;
+          }
+
+          .btn-outline-dark {
+            font-size: 14px; /* Atur ukuran font yang sesuai */
+            padding: 8px 16px; /* Atur padding yang sesuai */
+          }
+          
+
       }
 
       .service-time-card {
@@ -43,6 +60,7 @@
           font-size: 14px;
       }
 
+      
   </style>
     <!-- AKHIR STYLE CSS -->
 
@@ -90,10 +108,10 @@
     <section class="py-5 bg-black text-white">
         <div class="container px-5 my-5">
             <div class="text-center">
-                <h2 class="display-4 fw-bolder mb-4">About Us</h2>
+                <h2 class="display-4 fw-bolder mb-4">Tentang Kami</h2>
                 <p>Amsal 17:17 berbunyi seperti ini, “Seorang sahabat menaruh kasih setiap waktu, dan menjadi seorang
                     saudara dalam kesukaran.”</p>
-                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="/about_us">Learn More</a>
+                <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder btn-custom" href="/about_us">Lainnya</a>
             </div>
         </div>
     </section>
@@ -120,7 +138,7 @@
                       @php $counter++; @endphp
                   @endif
               @endforeach
-              <a class="btn btn-outline-dark px-5 py-3 fs-6 fw-bolder" href="/kebaktian">Learn More</a>
+              <a class="btn btn-outline-dark px-5 py-3 fs-6 fw-bolder" href="/kebaktian">Lainnya</a>
           </div>
       </div>
   </section>
