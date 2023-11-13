@@ -37,7 +37,7 @@
           }
       }
   </style>
-    <footer class="pt-lg-10 pt-5 footer bg-white">
+    <footer class="pt-lg-10 pt-5 footer bg-white border-top shadow-lg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
