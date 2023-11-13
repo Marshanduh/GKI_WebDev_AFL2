@@ -18,7 +18,7 @@ class PersembahanController extends Controller
         return view('persembahan', ['persembahans' => Persembahan::get()])->with([
 
             "pagetitle" => "Persembahan", 
-            "maintitle" => "Macam Persembahan"
+            
 
             // Add more data as needed
         ]);

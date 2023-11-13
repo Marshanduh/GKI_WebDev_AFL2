@@ -17,7 +17,6 @@ class KebaktianController extends Controller
         return view('kebaktian', ['kebaktians' => Kebaktian::get()])->with([
 
             "pagetitle" => "Kebaktian", 
-            "maintitle" => "Kebaktian GKI Mojokerto"
 
         ]);    
     }
