@@ -120,8 +120,8 @@
                             Jl. Raya Lawu 2
                             Mojokerto
                             Ph. (0321) 326694</p>
-                        <p class="mb-1">Email: <a href="">gki.mojokerto@gmail.com</a></p>
-                        <p>Phone: <span class="text-dark fw-semibold">(000) 123 456 789</span></p>
+                        <p class="mb-1">Email: <a href="mailto:gki.mojokerto@gmail.com">gki.mojokerto@gmail.com</a></p>
+                        <p>Phone: <span class="text-dark fw-semibold">+62 81231081242</span></p>
 
                     </div>
                 </div>
