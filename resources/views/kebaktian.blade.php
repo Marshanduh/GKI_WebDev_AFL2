@@ -4,20 +4,20 @@
     <style>
         /* Gaya Kebaktian Card */
         body {
-            margin: 50px;
+            /* margin: 50px; */
         }
         .kebaktian {
-            padding: 5px;
-            margin-bottom: 15px;
+            padding: 40px;
+            margin-bottom: 10px;
         }
 
         .card {
             border: none;
-            transition: transform 0.3s;
+            /* transition: transform 0.3s; */
         }
 
         .card:hover {
-            transform: scale(1.02);
+            /* transform: scale(1.02); */
         }
 
         .custom-image {
@@ -87,7 +87,7 @@
                                 <div class="custom-hr"></div>
                                 <p class="capt">Lokasi kebaktian dilaksanakan di
                                     {{ $kebaktian->lokasi_kebaktian }}</p>
-                                <a class="btn btn-primary btn-lg" href="#" role="button">Lokasi</a>
+                                <a class="btn btn-primary btn-lg" href="https://linktr.ee/gkiMoker" role="button">Lokasi</a>
                             </div>
                         </div>
                     </div>
