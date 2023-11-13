@@ -9,9 +9,9 @@
         }
     }
 
-    .card-body {
+    /* .card-body {
         text-align: left;
-    }
+    } */
 
     .card-title {
         font-size: 1.5rem;
