@@ -21,7 +21,15 @@ class KebaktianController extends Controller
 
         ]);    
     }
+    public function homepage()
+    {
+        return view('homepage', ['kebaktians' => Kebaktian::get()])->with([
+            "pagetitle" => "Kebaktian"
+            
+        ]);    
+    }
 
+    
     /**
      * Show the form for creating a new resource.
      */

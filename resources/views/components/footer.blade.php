@@ -1,4 +1,42 @@
     <!-- footer -->
+    <style>
+      @media (max-width: 767px) {
+          .footer {
+              padding-top: 30px;
+              flex-direction: column;
+          }
+
+          .col-lg-4 {
+              margin-bottom: 30px;
+          }
+
+          
+
+          .col-md-6 {
+              text-align: left;
+          }
+
+          .nav-footer {
+              text-align: left;
+              padding-top: 15px;
+          }
+      }
+
+      @media (min-width: 992px) {
+          .footer {
+              padding-top: 50px;
+          }
+
+          .col-md-6 {
+              text-align: left;
+          }
+
+          .nav-footer {
+              text-align: left;
+              padding-top: 0;
+          }
+      }
+  </style>
     <footer class="pt-lg-10 pt-5 footer bg-white">
         <div class="container">
             <div class="row">
@@ -8,8 +46,9 @@
                         <img src="../assets/images/brand/logo/logo.svg" alt="" class="logo-inverse ">
                         <div class="mt-4">
                             <p>GKI Mojokerto adalah salah satu gereja GKI yang berlokasi di kota Mojokerto, Jawa Timur.
-                              GKI Mojokerto merupakan salah satu cabang GKI (Gereja Kristen Mojokerto) yang berlokasikan di Mojokerto dan memiliki 2 gedung. 
-                              GKI Mojokerto berpusat di Madiun.
+                                GKI Mojokerto merupakan salah satu cabang GKI (Gereja Kristen Mojokerto) yang
+                                berlokasikan di Mojokerto dan memiliki 2 gedung.
+                                GKI Mojokerto berpusat di Madiun.
                             </p>
                             <!-- social media -->
                             <div class="fs-4 mt-4">
@@ -22,7 +61,7 @@
                                     </svg>
                                 </a>
                                 <!--Twitter-->
-                                <a href="https://www.youtube.com/results?search_query=gki+mojokerto" class=" me-2">
+                                <a href="https://www.youtube.com/@GKIMojokerto" class=" me-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
                                         <path
@@ -100,9 +139,13 @@
                 <!-- Links -->
                 <div class="col-12 col-md-7 col-lg-8 d-md-flex justify-content-end">
                     <nav class="nav nav-footer">
-                        <a class="nav-footers ps-0" href="https://www.termsfeed.com/dictionary/privacy-policy-definition/">Privacy Policy</a>
-                        <a class="nav-footers px-2 px-md-3" href="https://www.privacypolicies.com/blog/sample-cookies-policy-template/">Cookie Notice </a>
-                        <a class="nav-footers" href="https://termly.io/resources/templates/terms-of-use-template/">Terms of Use</a>
+                        <a class="nav-footers ps-0"
+                            href="https://www.termsfeed.com/dictionary/privacy-policy-definition/">Privacy Policy</a>
+                        <a class="nav-footers px-2 px-md-3"
+                            href="https://www.privacypolicies.com/blog/sample-cookies-policy-template/">Cookie Notice
+                        </a>
+                        <a class="nav-footers" href="https://termly.io/resources/templates/terms-of-use-template/">Terms
+                            of Use</a>
                     </nav>
                 </div>
             </div>

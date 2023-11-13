@@ -4,11 +4,31 @@
 
 <style>
     @media (max-width: 767px) {
-        .display-4{
+        .display-4 {
             font-size: 30px;
         }
     }
 
+    .card-body {
+        text-align: left;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .table th,
+    .table td {
+        font-size: 0.9rem;
+    }
 </style>
     {{-- HEADER --}}
 
@@ -123,10 +143,6 @@
 
 
     </main>
-
-
-
-
 
     {{-- <div class="card">
         <div class="table-responsive">
